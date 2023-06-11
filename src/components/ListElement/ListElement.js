@@ -1,7 +1,10 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { deleteContact } from 'redux/contactReducer';
 import css from './ListElement.module.css';
 
-const ListElement = ({ deleteContact, number, name, id }) => {
+const ListElement = ({ number, name, id }) => {
+  const dispatch = useDispatch();
   return (
     <>
       <p className={css.contacts__text}>
@@ -10,9 +13,7 @@ const ListElement = ({ deleteContact, number, name, id }) => {
       <button
         type="button"
         className={css.contacts__btn}
-        onClick={() => {
-          deleteContact(id);
-        }}
+        onClick={() => dispatch(deleteContact({ id }))}
       >
         Delete
       </button>
