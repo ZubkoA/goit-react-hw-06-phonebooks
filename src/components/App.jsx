@@ -1,5 +1,4 @@
 import Header from './Header';
-import React, { useState } from 'react';
 import ContactList from './ContactList/ContactList';
 import Filter from './Filter/Filter';
 import AddContacts from './AddContacts/AddContacts';

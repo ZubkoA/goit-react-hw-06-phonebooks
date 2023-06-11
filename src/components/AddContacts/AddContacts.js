@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { nanoid } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
 import { createContact } from 'redux/contactReducer';
-// import { nanoid } from 'nanoid';
 import css from './AddContacts.module.css';
 
 const AddContacts = () => {
