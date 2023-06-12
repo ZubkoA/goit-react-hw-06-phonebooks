@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { nanoid } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
-import { createContact } from 'redux/contactReducer';
+import { createContact } from 'redux/contacts/contactReducer';
 import css from './AddContacts.module.css';
 
 const AddContacts = () => {
@@ -11,6 +11,8 @@ const AddContacts = () => {
 
   const contact = useSelector(state => state.contacts.contacts);
   console.log(contact);
+  const state = useSelector(state => state.contacts);
+  console.log(state);
 
   const dispatch = useDispatch();
   const nameId = nanoid();

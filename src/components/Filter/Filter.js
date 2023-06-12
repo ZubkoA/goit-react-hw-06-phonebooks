@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { filterValue } from 'redux/contactReducer';
+import { filterValue } from 'redux/filter/filterReducer';
 import css from './Filter.module.css';
 
 const Filter = () => {

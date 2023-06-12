@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from 'redux/contactReducer';
+import { deleteContact } from 'redux/contacts/contactReducer';
 import css from './ListElement.module.css';
 
 const ListElement = ({ number, name, id }) => {
